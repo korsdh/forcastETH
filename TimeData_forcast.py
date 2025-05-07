@@ -145,6 +145,7 @@ def train_model(model, train_df, epochs=None, lr=None, verbose=10, patience=10):
         #     if train_hist[epoch-patience] < train_hist[epoch]:
         #         print('\n Early Stopping')
         #         break
+        
     return model.eval(), train_hist
 
 model, train_hist = train_model(LSTM, dataloader, epochs=epochs, lr=learning_rate, verbose=5, patience=20)
