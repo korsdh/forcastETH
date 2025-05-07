@@ -1,0 +1,15 @@
+{"time":"2025-05-06T17:53:17.1089+09:00","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"D:\\SDH\\time_series\\wandb\\run-20250506_175317-uxijumg8\\logs\\debug-core.log"}
+{"time":"2025-05-06T17:53:17.5788255+09:00","level":"INFO","msg":"created new stream","id":"uxijumg8"}
+{"time":"2025-05-06T17:53:17.5788255+09:00","level":"INFO","msg":"stream: started","id":"uxijumg8"}
+{"time":"2025-05-06T17:53:17.5788255+09:00","level":"INFO","msg":"sender: started","stream_id":"uxijumg8"}
+{"time":"2025-05-06T17:53:17.5788255+09:00","level":"INFO","msg":"handler: started","stream_id":"uxijumg8"}
+{"time":"2025-05-06T17:53:17.5788255+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"uxijumg8"}
+{"time":"2025-05-06T17:53:17.9000254+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-06T18:32:18.002186+09:00","level":"INFO","msg":"stream: closing","id":"uxijumg8"}
+{"time":"2025-05-06T18:32:18.002186+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-06T18:32:18.002186+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-06T18:32:18.7689255+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-06T18:32:19.0003492+09:00","level":"INFO","msg":"sender: closed","stream_id":"uxijumg8"}
+{"time":"2025-05-06T18:32:19.0003492+09:00","level":"INFO","msg":"handler: closed","stream_id":"uxijumg8"}
+{"time":"2025-05-06T18:32:19.0003492+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uxijumg8"}
+{"time":"2025-05-06T18:32:19.0008546+09:00","level":"INFO","msg":"stream: closed","id":"uxijumg8"}

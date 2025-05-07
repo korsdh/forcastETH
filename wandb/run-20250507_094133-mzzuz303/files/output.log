@@ -1,0 +1,39 @@
+Epoch:  0000 train loss :  0.0048
+Epoch:  0005 train loss :  0.0133
+Epoch:  0010 train loss :  0.0106
+Epoch:  0015 train loss :  0.0019
+Epoch:  0020 train loss :  0.0006
+Epoch:  0025 train loss :  0.0013
+Epoch:  0030 train loss :  0.0008
+Epoch:  0035 train loss :  0.0009
+Epoch:  0040 train loss :  0.0009
+Epoch:  0045 train loss :  0.0002
+Epoch:  0050 train loss :  0.0010
+Epoch:  0055 train loss :  0.0006
+Epoch:  0060 train loss :  0.0001
+Epoch:  0065 train loss :  0.0008
+Epoch:  0070 train loss :  0.0006
+Epoch:  0075 train loss :  0.0004
+Epoch:  0080 train loss :  0.0011
+Epoch:  0085 train loss :  0.0003
+Epoch:  0090 train loss :  0.0020
+Epoch:  0095 train loss :  0.0003
+Model saved at epoch 100 to ./checkpoint\model_path_100.pth
+Traceback (most recent call last):
+  File "D:\SDH\time_series\TimeData_forcast.py", line 150, in <module>
+    model, train_hist = train_model(LSTM, dataloader, epochs=epochs, lr=learning_rate, verbose=5, patience=20)
+  File "D:\SDH\time_series\TimeData_forcast.py", line 142, in train_model
+    wandb.save(save_path)
+  File "C:\conda_envs\ctl\lib\site-packages\wandb\sdk\wandb_run.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\conda_envs\ctl\lib\site-packages\wandb\sdk\wandb_run.py", line 464, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\conda_envs\ctl\lib\site-packages\wandb\sdk\wandb_run.py", line 451, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\conda_envs\ctl\lib\site-packages\wandb\sdk\wandb_run.py", line 2168, in save
+    return self._save(
+  File "C:\conda_envs\ctl\lib\site-packages\wandb\sdk\wandb_run.py", line 2227, in _save
+    target_path.symlink_to(source_path)
+  File "C:\conda_envs\ctl\lib\pathlib.py", line 1403, in symlink_to
+    self._accessor.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] 클라이언트가 필요한 권한을 가지고 있지 않습니다: 'D:\\SDH\\time_series\\checkpoint\\model_path_100.pth' -> 'D:\\SDH\\time_series\\wandb\\run-20250507_094133-mzzuz303\\files\\checkpoint\\model_path_100.pth'
