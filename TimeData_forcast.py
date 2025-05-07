@@ -139,13 +139,14 @@ def train_model(model, train_df, epochs=None, lr=None, verbose=10, patience=10):
             save_path = os.path.join(save_dir, f"model_path_{epoch+1}.pth")
             torch.save(model.state_dict(), save_path)
             print(f"Model saved at epoch {epoch+1} to {save_path}")
+            
             # wandb.save(save_path)
         
         # if(epoch%patience==0) & (epoch!=0):
         #     if train_hist[epoch-patience] < train_hist[epoch]:
         #         print('\n Early Stopping')
         #         break
-        
+
     return model.eval(), train_hist
 
 model, train_hist = train_model(LSTM, dataloader, epochs=epochs, lr=learning_rate, verbose=5, patience=20)
